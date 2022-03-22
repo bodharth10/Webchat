@@ -36,13 +36,7 @@
 
     <%= simple_form_for @room_message, remote: true do |form| %>
       <div class="input-group mb-3">
-        <%= form.input :message, as: :string,
-                                 wrapper: false,
-                                 label: false,
-                                 input_html: {
-                                   class: 'chat-input',
-                                   autocomplete: 'off'
-                                 } %>
+        <%= form.input :message, as: :string, wrapper: false, label: false, input_html: { class: 'chat-input',autocomplete: 'off'} %>
         <div class="input-group-append">
           <%= form.submit "Send", class: 'btn btn-primary chat-input' %>
         </div>

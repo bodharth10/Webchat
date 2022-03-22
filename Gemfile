@@ -30,7 +30,8 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'redis'
-
+gem 'whenever', require: false
+gem 'sidekiq', '~> 6.1.3'
 
 
 group :development, :test do
