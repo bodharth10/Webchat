@@ -41,7 +41,10 @@ $ bundle exec wheneverize
 whenever --update-crontab
 ```
 
-Seed User and Room data .
+
+
+
+### Seed User and Room data .
 
 ```
 rake create_room:run
