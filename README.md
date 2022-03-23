@@ -5,6 +5,7 @@
 
 * Ruby 2.6.3
 * Rails 6.1.5
+* Redis
 
 
 ### Setup
