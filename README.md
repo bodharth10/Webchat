@@ -1,25 +1,58 @@
-# README
+# WebChat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Technologies:
 
-* Ruby version
+* Ruby 2.6.3
+* Rails 6.1.5
 
-* System dependencies
 
-* Configuration
+### Setup
 
-* Database creation
+Navigate to directory where the code script is located
 
-* Database initialization
+```sh
+$ cd ~/Fonix/web_chat
+```
+Install the dependencies and devDependencies.Run Following command after navigating to directory.
 
-* How to run the test suite
+```sh
+$ rvm use 2.6.3
+````
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ bundle install
+```
 
-* Deployment instructions
+```
+$ gem install mailcatcher
+```
 
-* ...
-# Webchat
+```
+$ gem install redis
+```
+
+```
+$ bundle exec wheneverize
+```
+
+```
+whenever --update-crontab
+```
+
+
+
+
+### Steps to run Application
+
+Start the sidekiq server
+```sh
+$ /Fonix/web_chat/ bundle exec sidekiq
+```
+
+Start the rails server
+```sh
+$ /Fonix/web_chat/ rails s
+```
+
+
